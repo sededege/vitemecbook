@@ -150,7 +150,7 @@ const WallpaperMenu = () => {
         const dot3w = document.getElementById("dot3w");
         const dotsw = [dot1w, dot2w, dot3w];
         if (state.float.wallpaperBoard && wallpaperMenu) {
-            wallpaperMenu.style.zIndex = "8";
+            wallpaperMenu.style.zIndex = "2";
             dots.forEach((dot) => dot!.classList.remove("notActive-mode"));
             dotsw.forEach((dot) => dot!.classList.add("notActive-mode"));
 

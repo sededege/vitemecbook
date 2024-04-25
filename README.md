@@ -1,7 +1,7 @@
 <div align="center">
  
-<h1 align="center">MacOS in React + TypeScript</h1>
-<p align="center">A MacOS Clone built in TypeScript React with SASS and Framer Motion.</p>
+<h1 align="center">mecos in React + TypeScript</h1>
+<p align="center">A mecos Clone built in TypeScript React with SASS and Framer Motion.</p>
 
 ![](https://img.shields.io/badge/contributors-1-white)
 ![](https://img.shields.io/badge/commits-60-white)
@@ -17,11 +17,11 @@
 <br />
 
 ## Short Description
-This project is a macOS clone built using React and TypeScript. It aims to recreate the familiar and intuitive user interface of macOS within a web application. The combination of React's component-based architecture, TypeScript's type safety, and the sleek design of macOS provides a seamless and responsive user experience. Users will be able to interact with a macOS-like interface, including windows, menus, and toolbars, offering cross-platform compatibility and the convenience of a familiar operating system within their web browser.
+This project is a mecos clone built using React and TypeScript. It aims to recreate the familiar and intuitive user interface of mecos within a web application. The combination of React's component-based architecture, TypeScript's type safety, and the sleek design of mecos provides a seamless and responsive user experience. Users will be able to interact with a mecos-like interface, including windows, menus, and toolbars, offering cross-platform compatibility and the convenience of a familiar operating system within their web browser.
 
 
 ## 🔴 Demo
-🧪 [Live Demo](https://wolfgunblood.github.io/macos/) available. Click "Live Demo" to open it.
+🧪 [Live Demo](https://wolfgunblood.github.io/mecos/) available. Click "Live Demo" to open it.
 
 ## Showcase
 You can see images and a GIF of the project in user interaction below. 
@@ -47,7 +47,7 @@ You can see images and a GIF of the project in user interaction below.
 - Stylesheet: SCSS
 
 ## Motivation
-The motivation behind building a macOS-like interface in React and TypeScript is to provide a familiar and intuitive user experience for web applications. macOS has been widely acclaimed for its sleek design, usability, and productivity-enhancing features. By recreating a similar interface using React and TypeScript, I aim to bring the power of macOS to the web.
+The motivation behind building a mecos-like interface in React and TypeScript is to provide a familiar and intuitive user experience for web applications. mecos has been widely acclaimed for its sleek design, usability, and productivity-enhancing features. By recreating a similar interface using React and TypeScript, I aim to bring the power of mecos to the web.
 
 ## 🤝 Contributions
 This project is open to contributions! I am still working on some features (Calculator, Calendar, VSCode, Music App) and there's probably a ton of things to add/change/fix. Feel free to fork it and create a PR!

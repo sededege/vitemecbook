@@ -4,7 +4,7 @@ import getDropdownItems from '../../utils/helpers/getDropdownContent';
 import './DropdownContent.scss';
 
 const DropdownContent = () => {
-    const [ state, dispatch ] = useContext(store);
+    const [ state ] = useContext(store);
     const content = getDropdownItems(state);
   return (
     <div
@@ -41,12 +41,8 @@ const DropdownContent = () => {
                     `}
 
                     style={{ color: item.available ? "white" : "rgba(255,255,255,0.5)" } }
-                    onClick={(e) => {
-                        dispatch({
-                            type: "section/CHECK",
-                            payload: e.target,
-                        });
-                    }}
+                    onClick={ () => window.location.href = item.link ? item.link : ""}
+
                 >
                     {item.name}
                 </div>

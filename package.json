@@ -1,6 +1,6 @@
 {
-  "homepage": "https://wolfgunblood.github.io/macos",
-  "name": "macos",
+  "homepage": "https://wolfgunblood.github.io/mecos",
+  "name": "mecos",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -24,6 +24,7 @@
     "react-dom": "^18.2.0",
     "react-draggable": "^4.4.5",
     "react-icons": "^4.8.0",
+    "react-spotify-embed": "^2.0.4",
     "redux": "^4.2.1",
     "sass": "^1.62.0",
     "vite-plugin-svgr": "^2.4.0"

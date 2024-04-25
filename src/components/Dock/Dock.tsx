@@ -1,41 +1,31 @@
-import React,{ useContext} from 'react';
+import React, { useContext } from 'react';
 import { store } from '../../App';
 import './Dock.scss';
-import { finder,
-        calculator,
-        calendar,
-        discord,
-        github,
-        photos,
-        spotify,
-        vscode,
-        weather
+import {
+   
+    pump,
+    telegram,
+
+    dex,
+    spotify,
+    vscode,
+    x
 } from '../../resources';
 
 
 
 const Dock = () => {
-    const [ state, dispatch ] = useContext(store);
+    const [state, dispatch] = useContext(store);
     // const [ isDock, setIsDock ] = useState(false);
 
 
-    const openWallpaper = (e: React.MouseEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        e.stopPropagation();
-        dispatch({type: 'wallpaper/OPEN'});
-    
-    };
-    const openWeather = (e: React.MouseEvent<HTMLDivElement>) => {
-        e.preventDefault();
-        e.stopPropagation();
-        dispatch({type: 'weather/OPEN'});
-    
-    };
+ 
+ 
     const openVSCode = (e: React.MouseEvent<HTMLDivElement>) => {
         e.preventDefault();
         e.stopPropagation();
-        dispatch({type: 'vscode/OPEN'});
-    
+        dispatch({ type: 'vscode/OPEN' });
+
     };
 
     // const openFinder = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -50,187 +40,146 @@ const Dock = () => {
     const openFinder = (e: React.MouseEvent<HTMLDivElement>) => {
         e.preventDefault();
         e.stopPropagation();
-        
-        dispatch({type: 'finder/OPEN'});
+
+        dispatch({ type: 'finder/OPEN' });
     };
     // useEffect(() => {
     //     setIsDock((prev) => !prev)
     // }, [state.weatherWindow.weatherStretch]);
-  return (
-    <>
-        <div className={`dock`}>
-            <div
-                className={`dock-item ${state.dockItem === 0 ? 'hovered' : ""}
-                ${state.dockItem === 1 ? 'distance-1' 
-                : state.dockItem === 2 ? 'distance-2'
-                : "" 
-                }`}
-                id='0'
+    return (
+        <>
+            <div className={`dock`}>
+                <div
+                    className={`dock-item ${state.dockItem === 0 ? 'hovered' : ""}
+                ${state.dockItem === 1 ? 'distance-1'
+                            : state.dockItem === 2 ? 'distance-2'
+                                : ""
+                        }`}
+                    id='0'
+                // onMouseEnter = {() => {}}
+                // onMouseLeave = {() => {}}
+/*                 onClick={openFinder}
+ */            >
+
+                        <div className='tool-tip'>Telegram</div>
+                        <img
+                        onClick={() => window.location.href = 'https://t.me/mecbekportal'}
+                            src={telegram}
+                            alt="Telegram"
+                            className='dock-icon finder'
+                        />
+               
+                    <div className='point' />
+
+                </div>
+
+                <div
+                    className={`dock-item ${state.dockItem === 0 ? 'hovered' : ""}
+                ${state.dockItem === 1 ? 'distance-1'
+                            : state.dockItem === 2 ? 'distance-2'
+                                : state.dockItem === 3 ? 'distance-3'
+                                    : ""
+                        }`}
+                    id='5'
+                // onMouseEnter = {() => {}}
+                // onMouseLeave = {() => {}}
+                onClick={() => window.location.href = 'https://twitter.com/mecbeksol'}
+
+                >
+                    <div className='tool-tip'>x</div>
+                    <img
+                        src={x}
+                        alt="x"
+                        className='dock-icon calculator'
+                    />
+                </div>
+
+                <div
+                    className={`dock-item ${state.dockItem === 0 ? 'hovered' : ""}
+                ${state.dockItem === 1 ? 'distance-1'
+                            : state.dockItem === 2 ? 'distance-2'
+                                : state.dockItem === 3 ? 'distance-3'
+                                    : ""
+                        }`}
+                    id='8'
                 // onMouseEnter = {() => {}}
                 // onMouseLeave = {() => {}}
                 onClick={openFinder}
-            >
-                <div className='tool-tip'>Finder</div>
-                <img 
-                    src={finder} 
-                    alt="Finder"
-                    className='dock-icon finder' 
-                />
-                <div className='point'/>
-            </div>
-            <div className='divison'/>
-            <div
-                className={`dock-item ${state.dockItem === 0 ? 'hovered' : ""}
-                ${state.dockItem === 1 ? 'distance-1' 
-                : state.dockItem === 2 ? 'distance-2'
-                : state.dockItem === 3 ? 'distance-3'
-                : "" 
-                }`}
-                id='1'
+
+                >
+                    <div className='tool-tip'>Spotify</div>
+                    <img
+                        src={spotify}
+                        alt="Spotify"
+                        className='dock-icon calculator'
+
+                    />
+                </div>
+                <div
+                    className={`dock-item ${state.dockItem === 0 ? 'hovered' : ""}
+                ${state.dockItem === 1 ? 'distance-1'
+                            : state.dockItem === 2 ? 'distance-2'
+                                : state.dockItem === 3 ? 'distance-3'
+                                    : ""
+                        }`}
+                    id='9'
+                    // onMouseEnter = {() => {}}
+                    // onMouseLeave = {() => {}}
+/*                     onClick={openVSCode}
+ */
+/*                     onClick={() => window.location.href = 'https://twitter.com/mecbeksol'}
+ */
+                >
+                    <div className='tool-tip'>Pump Fun</div>
+                    <img
+                        src={pump}
+                        alt="Pump Fun"
+                        className='dock-icon calculator'
+                    />
+                </div>
+                <div
+                    className={`dock-item ${state.dockItem === 0 ? 'hovered' : ""}
+                ${state.dockItem === 1 ? 'distance-1'
+                            : state.dockItem === 2 ? 'distance-2'
+                                : state.dockItem === 3 ? 'distance-3'
+                                    : ""
+                        }`}
+                    id='10'
                 // onMouseEnter = {() => {}}
                 // onMouseLeave = {() => {}}
-            >
-                <div className='tool-tip'>Calculator</div>
-                <img 
-                    src={calculator} 
-                    alt="Calculator"
-                    className='dock-icon calculator' 
-                />
-                <div className='point'/>
+/*                 onClick={openWeather}
+ */            >
+                    <div className='tool-tip'>Dex Screener</div>
+                    <img
+                        src={dex}
+                        alt="Dexscreener"
+                        className='dock-icon calculator'
+                    />
+                </div>
+                <div
+                    className={`dock-item ${state.dockItem === 0 ? 'hovered' : ""}
+                ${state.dockItem === 1 ? 'distance-1'
+                            : state.dockItem === 2 ? 'distance-2'
+                                : state.dockItem === 3 ? 'distance-3'
+                                    : ""
+                        }`}
+                    id='9'
+                    // onMouseEnter = {() => {}}
+                    // onMouseLeave = {() => {}}
+                    onClick={openVSCode}
+/*                     onClick={() => window.location.href = 'https://twitter.com/mecbeksol'}
+ */
+                >
+                    <div className='tool-tip'>VS Code</div>
+                    <img
+                        src={vscode}
+                        alt="VsCode"
+                        className='dock-icon calculator'
+                    />
+                </div>
             </div>
-            <div
-                className={`dock-item ${state.dockItem === 0 ? 'hovered' : ""}
-                ${state.dockItem === 1 ? 'distance-1' 
-                : state.dockItem === 2 ? 'distance-2'
-                : state.dockItem === 3 ? 'distance-3'
-                : "" 
-                }`}
-                id='2'
-                // onMouseEnter = {() => {}}
-                // onMouseLeave = {() => {}}
-                onClick={openWallpaper}
-            >
-                <div className='tool-tip'>Photos</div>
-                <img 
-                    src={photos} 
-                    alt="Photos"
-                    className='dock-icon calculator' 
-                />
-            </div>
-            <div
-                className={`dock-item ${state.dockItem === 0 ? 'hovered' : ""}
-                ${state.dockItem === 1 ? 'distance-1' 
-                : state.dockItem === 2 ? 'distance-2'
-                : state.dockItem === 3 ? 'distance-3'
-                : "" 
-                }`}
-                id='3'
-                // onMouseEnter = {() => {}}
-                // onMouseLeave = {() => {}}
-            >
-                <div className='tool-tip'>Calendar</div>
-                <img 
-                    src={calendar} 
-                    alt="Calendar"
-                    className='dock-icon calculator' 
-                />
-            </div>
-            <div
-                className={`dock-item ${state.dockItem === 0 ? 'hovered' : ""}
-                ${state.dockItem === 1 ? 'distance-1' 
-                : state.dockItem === 2 ? 'distance-2'
-                : state.dockItem === 3 ? 'distance-3'
-                : "" 
-                }`}
-                id='4'
-                // onMouseEnter = {() => {}}
-                // onMouseLeave = {() => {}}
-            >
-                <div className='tool-tip'>Discord</div>
-                <img 
-                    src={discord} 
-                    alt="Discord"
-                    className='dock-icon calculator' 
-                />
-            </div>
-            <div
-                className={`dock-item ${state.dockItem === 0 ? 'hovered' : ""}
-                ${state.dockItem === 1 ? 'distance-1' 
-                : state.dockItem === 2 ? 'distance-2'
-                : state.dockItem === 3 ? 'distance-3'
-                : "" 
-                }`}
-                id='5'
-                // onMouseEnter = {() => {}}
-                // onMouseLeave = {() => {}}
-            >
-                <div className='tool-tip'>Github</div>
-                <img 
-                    src={github} 
-                    alt="Github"
-                    className='dock-icon calculator' 
-                />
-            </div>
-    
-            <div
-                className={`dock-item ${state.dockItem === 0 ? 'hovered' : ""}
-                ${state.dockItem === 1 ? 'distance-1' 
-                : state.dockItem === 2 ? 'distance-2'
-                : state.dockItem === 3 ? 'distance-3'
-                : "" 
-                }`}
-                id='8'
-                // onMouseEnter = {() => {}}
-                // onMouseLeave = {() => {}}
-            >
-                <div className='tool-tip'>Spotify</div>
-                <img 
-                    src={spotify} 
-                    alt="Spotify"
-                    className='dock-icon calculator' 
-                />
-            </div>
-            <div
-                className={`dock-item ${state.dockItem === 0 ? 'hovered' : ""}
-                ${state.dockItem === 1 ? 'distance-1' 
-                : state.dockItem === 2 ? 'distance-2'
-                : state.dockItem === 3 ? 'distance-3'
-                : "" 
-                }`}
-                id='9'
-                // onMouseEnter = {() => {}}
-                // onMouseLeave = {() => {}}
-                onClick={openVSCode}
-            >
-                <div className='tool-tip'>VS Code</div>
-                <img 
-                    src={vscode} 
-                    alt="VS Code"
-                    className='dock-icon calculator' 
-                />
-            </div>
-            <div
-                className={`dock-item ${state.dockItem === 0 ? 'hovered' : ""}
-                ${state.dockItem === 1 ? 'distance-1' 
-                : state.dockItem === 2 ? 'distance-2'
-                : state.dockItem === 3 ? 'distance-3'
-                : "" 
-                }`}
-                id='10'
-                // onMouseEnter = {() => {}}
-                // onMouseLeave = {() => {}}
-                onClick={openWeather}
-            >
-                <div className='tool-tip'>Weather</div>
-                <img 
-                    src={weather} 
-                    alt="Weather"
-                    className='dock-icon calculator' 
-                />
-            </div>
-        </div>
-    </>
-  )
+        </>
+    )
 }
 
 export default Dock

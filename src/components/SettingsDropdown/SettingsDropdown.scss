@@ -38,8 +38,8 @@
         .airdrop-btn{
             *{
                 margin-bottom: 2px;
-                pointer-events: none;
-            }
+/*                 pointer-events: none;
+ */            }
         }
         button {
             border: none;
@@ -56,8 +56,8 @@
             *{
                 height: 17px;
                 width: 17px;
-                pointer-events: none;
-            }
+/*                 pointer-events: none;
+ */            }
         }
     }
 }
@@ -134,8 +134,8 @@
     cursor: pointer;
 
     *{
-        pointer-events: none;
-    }
+/*         pointer-events: none;
+ */    }
 
     .preview{
         border: none;

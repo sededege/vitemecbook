@@ -10,78 +10,97 @@ switch (state.section) {
             {
                 name: "About This MAC",
                 available: true,
+                link: 'asd',
             },
             {
                 name: "divider",
                 available: false,
+                link: 'asd'
             },
             {
                 name: "System Preferences",
                 available: true,
+                link: 'asd'
             },
             {
                 name: "App Store",
                 available: true,
+                link: 'asd'
             },
             {
                 name: "divider",
                 available: false,
+                link: 'asd'
             },
             {
                 name: "Hide This Window",
                 available: true,
+                link: 'asd'
             },
             {
                 name: "Hide Others",
                 available: true,
+                link: 'asd'
             },
             {
                 name: "Show All",
                 available: true,
+                link: 'asd'
             },
             {
                 name: "divider",
                 available: false,
+                link: 'asd'
             },
             {
                 name: "Recent Times",
                 available: true,
+                link: 'asd'
             },
             {
                 name: "divider",
                 available: false,
+                link: 'asd'
             },
             {
                 name:   "Force Quit",
                 available: true,
+                link: 'asd'
             },
             {
                 name: "divider",
                 available: false,
+                link: 'asd'
             },
             {
                 name: "Sleep",
                 available: true,
+                link: 'asd'
             },
             {
                 name: "Restart This Mac",
                 available: true,
+                link: 'asd'
             },
             {
                 name: "Shut Down",
                 available: true,
+                link: 'asd'
             },
             {
                 name: "divider",
                 available: false,
+                link: 'asd'
             },
             {
                 name: "Lock Screen",
                 available: true,
+                link: 'asd'
             },
             {
                 name: "Log Out",
                 available: true,
+                link: 'asd'
             },
 
         ];
@@ -91,426 +110,106 @@ switch (state.section) {
             {
             name: "About Finder",
             available: true,
+            link: 'asd'
             },
             {
               name: "divider",
-              available: false,  
+              available: false, 
+              link: 'asd' 
             },
             {
                 name: "Preferences",
                 available: true,
+                link: 'asd'
             },
             {
                 name: "divider",
                 available: false,
+                link: 'asd'
             },
             {
                 name: "Empty Trash",
                 available: true,  
+                link: 'asd'
             },
             {
                 name: "divider",
                 available: false,
+                link: 'asd'
             },
             {
                 name: "Hide Finder",
                 available: true,
+                link: 'asd'
             },
             {
                 name: "Hide Others",
                 available: true,
+                link: 'asd'
             },
             {
                 name: "Show All",
                 available: true,
+                link: 'asd'
             }
         ];
         break;
     case "file":
         content =[
             {
-                name: "New Finder Window",
+                name: "$WIF $3.20 - dogwifhat / SOL...",
                 available: true,
+                link: 'https://dexscreener.com/solana/ep2ib6dydeeqd8mfe2ezhcxx3kp3k2elkkirfpm5eymx'
             },
             {
-                name: "New Foler",
+                name: "Ansem (@blknoiz06) / X",
                 available: true,
+                link: 'https://twitter.com/blknoiz06'
+
             },
             {
-                name: "New Tab",
+                name: "$boden $0.06 - SOL...",
                 available: true,
+                link: 'https://dexscreener.com/solana/6uybx1x8yucfj8ystpyizbyg7uqzaq2s46zwphumkjg5'
             },
             {
-                name: "Open",
-                available: false,
-            },
-            {
-                name: "Open With",
-                available:  false,
-            },
-            {
-                name: "Print",
-                available: false,
-            },
-            {
-                name: "Close Window",
-                available: false,
-            },
-            {
-                name: "divider",
-                available: false,
-            },
-            {
-                name: "Get Info",
+                name: "How to fight with jeeters",
                 available: true,
+                   link: 'https://www.google.com/search?q=how+to+fight+with+jeeters&oq=how+to+fight+with+jeeters&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORigATIHCAEQIRigATIHCAIQIRigAdIBCDQ3OTlqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8'
             },
             {
-                name: "Rename",
-                available: false,
+                name: "PornHub - Home",
+                available: true,
+                   link: 'https://www.pornhub.com/'
             },
             {
-                name: "divider",
-                available: false,
+                name: "XVIDEOS.COM",
+                available: true,
+                   link: 'https://xvideos.com/'
             },
-            {
-                name: "Duplicate",
-                available: false,
-            },
-            {
-                name: "Make Alias",
-                available: false,
-            },
-            {
-                name: "Quick Look",
-                available: false,
-            },
-            {
-                name: "Show Original",
-                available: false,
-            },
-            {
-                name: "Add to Sidebar",
-                available: false,
-            },
-            {
-                name: "divider",
-                available: false,
-            },
-            {
-                name: "Move to Trash",
-                available: false,
-            },
-            {
-                name: "Eject",
-                available: false,
-            },
-            {
-                name: "divider",
-                available: false,
-            },
-            {
-                name: "Find",
-                available: false,
-            },
-            {
-                name: "divider",
-                available: false,
-            },
-            {
-                name: "Tags",
-                available: false,
-            },
+          
         ];
         break;
 
-        case "edit" : 
-        content = [
-            {
-                name: "Undo",
-                available: false,
-            },
-            {
-                name: "Redo",
-                available: false,
-            },
-            {
-                name: "divider",
-                available: false,
-            },
-            {
-                name: "Cut",
-                available: false,
-            },
-            {
-                name: "Copy",
-                available: false,
-            },
-            {
-                name: "Paste",
-                available: false,
-            },
-            {
-                name: "Select All",
-                available: false,
-            },
-            {
-                name: "divider",
-                available: false,
-            },
-            {
-                name: "Show Clipboard",
-                available: false,
-            },
-            {
-                name: "divider",
-                available: false,
-            },
-            {
-                name: "Start Dication",
-                available: false,
-            },
-            {
-                name: "Emoji & Symbols",
-                available: true,
-            },
-        ]
-        break;
 
-        case "view":
-            content = [
-                {
-                    name: "As Icons",
-                    available: true,
-                },
-                {
-                    name: "As List",
-                    available: true,
-                },
-                {
-                    name: "As Columns",
-                    available: true,
-                },
-                {
-                    name: "As Gallery",
-                    available: true,
-                },
-                {
-                    name: "divider",
-                    available: false,
-                },
-                {
-                    name: "Use Stacks",
-                    available: false,
-                },
-                {
-                    name: "Sort By",
-                    available: false,
-                },
-                {
-                    name: "Clean UP",
-                    available: false,
-                },
-                {
-                    name: "divider",
-                    available: false,
-                },
-                {
-                    name: "Hide Sidebar",
-                    available: false,
-                },
-                {
-                    name: "Show Preview",
-                    available: false,
-                },
-                {
-                    name: "divider",
-                    available: false,
-                },
-                {
-                    name: "Hide Toolbar",
-                    available: false,
-                },
-                {
-                    name: "Show All Tabs",
-                    available: false,
-                },
-                {
-                    name: "Show Tab Bar",
-                    available: false,
-                },
-                {
-                    name: "Show Status Bar",
-                    available: false,
-                },
-                {
-                    name: "Show Tab Bar in Full Screen",
-                    available: false,
-                },
-                {
-                    name: "divider",
-                    available: false,
-                },
-                {
-                    name: "Show View Options",
-                    available: false,
-                },
-                {
-                    name: "Show Preview Options",
-                    available: false,
-                },
-                {
-                    name: "divider",
-                    available: false,
-                },
-                {
-                    name: "Enter Full Screen",
-                    available: false,
-                },
-            ];
-            break;
 
-            case "go":
-                content = [ 
-                    {
-                        name: "Back",
-                        available: false,
-                    },
-                    {
-                        name: "Forward",
-                        available: false,
-                    },
-                    {
-                        name: "Enclosing Folder",
-                        available: false,
-                    },
-                    {
-                        name: "divider",
-                        available: false,
-                    },
-                    {
-                        name: "Recents",
-                        available: false,
-                    },
-                    {
-                        name: "Documents",
-                        available: false,
-                    },
-                    {
-                        name: "Desktop",
-                        available: false,
-                    },
-                    {
-                        name: "Downloads",
-                        available: false,
-                    },
-                    {
-                        name: "Home",
-                        available: true,
-                    },
-                    {
-                        name: "Computer",
-                        available: true,
-                    },
-                    {
-                        name: "Airdrop",
-                        available: true,
-                    },
-                    {
-                        name: "Network",
-                        available: true,
-                    },
-                    {
-                        name: "iCloud Drive",
-                        available: true,
-                    },
-                    {
-                        name: "Applications",
-                        available: true,
-                    },
-                    {
-                        name: "Utilities",
-                        available: true,
-                    },
-                    {
-                        name: "divider",
-                        available: false,
-                    },
-                    {
-                        name: "Go to folder",
-                        available: false,
-                    },
-                    {
-                        name: "Connect to Server",
-                        available: false,
-                    },
-                ];
-                break;
-                case "window":
-                    content = [
-                        {
-                            name: "Minimize",
-                            available: false,
-                        },
-                        {
-                            name: "Zoom",
-                            available: false,
-                        },
-                        {
-                            name: "Move Window to Left Side of the Screen",
-                            available: false,
-                        },
-                        {
-                            name: "Move Window to Right Side of the Screen",
-                            available: false,
-                        },
-                        {
-                            name: "Cycle Through Windows",
-                            available: false,
-                        },
-                        {
-                            name: "divider",
-                            available: false,
-                        },
-                        {
-                            name: "Show Previous Tab",
-                            available: false,
-                        },
-                        {
-                            name: "Show Next Tab",
-                            available: false,
-                        },
-                        {
-                            name: "Move Window to New Tab",
-                            available: false,
-                        },
-                        {
-                            name: "Merge Windows",
-                            available: false,
-                        },
-                        {
-                            name: "divider",
-                            available: false,
-                        },
-                        {
-                            name: "Bring All Windows to Front",
-                            available: false,
-                        },
-                    ];
-                    break;
 
                     case "help":
                         content = [
                             {
                                 name: "Send Finder FeedBack",
                                 available: false,
+                                link: 'asd'
                             },
                             {
                                 name: "divider",
                                 available: false,
+                                link: 'asd'
                             },
                             {
-                                name: "macOS Help",
+                                name: "mecos Help",
                                 available: false,
+                                link: 'asd'
                             },
                         ];
                         break;

@@ -1,5 +1,5 @@
 import storeType from "../../types/store";
-import img from '../../assets/wallpapers/46.jpg';
+import img from '../../assets/wallpapers/wallpaper.png';
 
 const sampleStore : storeType ={
     weather: {

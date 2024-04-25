@@ -38,3 +38,7 @@ export {default as twitter } from './images/webp/twitter.png';
 export {default as vscode } from './images/webp/vscode.png';
 export {default as spotify } from './images/webp/spotify.png';
 export {default as weather } from './images/webp/weather.png';
+export {default as telegram } from './images/webp/tg.png';
+export {default as dex } from './images/webp/dex.png';
+export {default as pump } from './images/webp/pump2.png';
+export {default as x } from './images/webp/x.png';

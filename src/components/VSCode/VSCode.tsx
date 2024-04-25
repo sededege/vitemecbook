@@ -42,7 +42,7 @@ const VSCode = () => {
                     <div>
                         <iframe
                             src='https://stackblitz.com/angular/pxxjqeeegeba?devToolsHeight=33&embed=1&file=src/index.html&hideNavigation=1&theme=dark'
-                            title="VS Code for macOS Web"
+                            title="VS Code for mecos Web"
                         />
                     </div>
                 </section>

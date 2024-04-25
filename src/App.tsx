@@ -2,10 +2,10 @@ import { createContext, useReducer } from 'react';
 import NavBar from './components/NavBar/NavBar';
 import Page from './components/Page/Page';
 import Dock from './components/Dock/Dock.tsx';
-// import VSCode from './components/VSCode/VSCode.tsx';
+import VSCode from './components/VSCode/VSCode.tsx';
 import WallpaperMenu from './components/WallpaperMenu/WallpaperMenu.tsx';
 import Weather from './components/Weather/Weather.tsx';
-// import Finder from './components/Finder/Finder.tsx';
+ import Finder from './components/Finder/Finder.tsx';
 import './App.css';
 import { ChakraProvider } from '@chakra-ui/react';
 import reducer from './reducers/reducer';
@@ -29,15 +29,16 @@ const App = () => {
     <>
       <ChakraProvider>
         <StoreProvider>
-          <Page>
 
+          <Page>
             <NavBar />
             <Dock />
               <Weather />
             <WallpaperMenu />
-            {/* <VSCode /> */}
+            <VSCode />
             <ContextMenu />
-            {/* <Finder /> */}
+
+            <Finder />
           </Page>
             
         </StoreProvider>

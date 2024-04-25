@@ -6,13 +6,11 @@ import Draggable from 'react-draggable';
 import WindowNav from '../WindowNav/WindowNav';
 import WindowBody from '../WindowBody/WindowBody';
 
-import { finder } from '../../resources';
 
 const Finder = () => {
     const [ state, _dispatch ] = useContext(store);
     const [ isClose, setIsClose ] = useState(true);
     
-    const finderName = "Finder";
     const finderHandle = "finder-handle";
 
     useEffect(() => {
@@ -28,13 +26,14 @@ const Finder = () => {
                 id='finder-window'
                 // onClick={() => {}}
             >
+                
                 <WindowNav
                     handleName={finderHandle} 
-                    name={finderName} 
+                    name='Spotify' 
                     isClose={isClose} 
                     setIsClose={setIsClose}
                 />
-                <WindowBody handleIcon = {finder}/>
+                <WindowBody/>
             </div>
         </Draggable>
     )

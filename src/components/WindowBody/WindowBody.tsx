@@ -1,15 +1,12 @@
+import { Spotify } from 'react-spotify-embed';
 import './WindowBody.scss';
 
-const WindowBody = ({ handleIcon } :any) => {
+const WindowBody = () => {
     return (
         <section className='window-body'>
-                <h4>Sorry Nothing Her Yet !!!</h4>
-                <img
-                    src={handleIcon}
-                    alt="Icon"
-                    className='body-icon'
-                    
-                />
+            <Spotify link="https://open.spotify.com/playlist/7zpoJrGbGLL9CkI3Cg4GCH" />
+
+              
         </section>
     )
 }

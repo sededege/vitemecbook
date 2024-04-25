@@ -67,25 +67,25 @@ const NavBar = () => {
         </div>
 
 
-        <div className='finder section' id='finder' onClick={dispatchAction}>
+       {/*  <div className='finder section' id='finder' onClick={dispatchAction}>
           Finder
           <div
             className={`${state.section === "finder" ? "selected-finder" : "not-selected"
               }`}
           ></div>
           {state.section === "finder" ? <DropdownContent /> : null}
-        </div>
+        </div> */}
 
 
         <div className='file section' id='file' onClick={dispatchAction}>
-          File
+          Historial
           <div
             className={`${state.section === "file" ? "selected-file" : "not-selected"
               }`}
           ></div>
           {state.section === "file" ? <DropdownContent /> : null}
         </div>
-        <div className='edit section' id='edit' onClick={dispatchAction}>
+        {/* <div className='edit section' id='edit' onClick={dispatchAction}>
           Edit
           <div
             className={`${state.section === "edit" ? "selected-edit" : "not-selected"
@@ -108,7 +108,7 @@ const NavBar = () => {
               }`}
           ></div>
           {state.section === "go" ? <DropdownContent /> : null}
-        </div>
+        </div> */}
         {/* <div className='window section' id='window' onClick={dispatchAction}>
           Window
           <div
